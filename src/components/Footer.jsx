@@ -1,11 +1,11 @@
-import React from 'react'
+import footer from "../assests/images/footer.png";
 
-const Footer = () => {
+function Footer() {
   return (
     <div>
-      <h1>hello world Footer</h1>
+      <img src={footer} alt="" />
     </div>
-  )
+  );
 }
 
-export default Footer
+export default Footer;

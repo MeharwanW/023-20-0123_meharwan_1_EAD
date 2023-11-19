@@ -1,24 +1,19 @@
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import Hero from "./components/Hero";
-import React from 'react';
-import Navbar1 from './components/Navbar1';
-import Welcome from './components/Welcome';
+import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Header from './components/Header';
+import HeroSection from './components/HeroSection';
+import Footer from './components/Footer';
 import Auction from './components/Auction';
-import { DiscoverFunction, anotherFunction } from './components/DiscoverFunctions';
+import Discover from './components/Discover';
 
 function App() {
-
-  DiscoverFunction();
-  anotherFunction();
   return (
-    <div className="App">
-      <Navbar1></Navbar1>
-      <Welcome></Welcome>
-      <Auction></Auction>
-      <Header></Header>
-      <Hero></Hero>
-      <Footer></Footer>
+    <div>
+      <Header/>
+      <HeroSection />
+      <Auction />
+      <Discover />
+      <Footer />
     </div>
   );
 }
